@@ -1,7 +1,7 @@
 {
   "name": "ruqa",
   "version": "5.0.0",
-  "description": "A bot that I use for my personal Discord server",
+  "description": "A bot that I use in my personal Discord server",
   "main": "index.js",
   "license": "Apache-2.0",
   "scripts": {
