@@ -1,0 +1,30 @@
+{
+  "name": "ruqa",
+  "version": "5.0.0",
+  "description": "A bot that I use for my personal Discord server",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruzie",
+  "dependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^17.0.42",
+    "dotenv": "^16.0.1",
+    "eris": "^0.17.0",
+    "glob": "^8.0.3",
+    "ms": "^2.1.3",
+    "pretty-ms": "7.0.1",
+    "typescript": "^4.7.3",
+    "vulkava": "github:Ruqabot/vulkava-ruqa#dist"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
