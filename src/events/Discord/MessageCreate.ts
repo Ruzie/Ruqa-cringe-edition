@@ -2,7 +2,7 @@ import { env } from "node:process";
 import type {
     Message, PossiblyUncachedTextableChannel, TextableChannel, VoiceChannel,
 } from "eris";
-import ruqa from "../..";
+import ruqa from "../../index"
 import GatewayEvent from "../../structures/GatewayEvent";
 import Logger from "../../utils/Logger";
 import panic from "../../utils/NodeExceptions";

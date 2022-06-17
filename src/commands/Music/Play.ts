@@ -18,6 +18,10 @@ export default new Command({
         args: string[],
     }) => {
         const query = args.join(" ");
+        if (!query) {
+            await createEmbedPost(message, "You need to query a song.");
+            return;
+        }
         let result;
 
         if (ruqa.cache.see.length === 0) {

@@ -45,7 +45,7 @@ export default class Ruqa extends Client {
     }
 
     private async loadCommands(): Promise<void> {
-        const commands = await promisedGlob(`${cwd()}/dist/commands/**/*.js`);
+        const commands = await promisedGlob(`${cwd()}/build/commands/**/*.js`);
         if (!commands.length) {
             panic("Failed to iterate commands directory in wildcard mode.");
             return;
@@ -60,7 +60,7 @@ export default class Ruqa extends Client {
     }
 
     private async loadGatewayEvents(): Promise<void> {
-        const events = await promisedGlob(`${cwd()}/dist/events/Discord/*.js`);
+        const events = await promisedGlob(`${cwd()}/build/events/Discord/*.js`);
         if (!events.length) {
             panic("Failed to read events directory in wildcard mode.");
             return;
@@ -81,7 +81,7 @@ export default class Ruqa extends Client {
     }
 
     private async loadLavalinkEvents(): Promise<void> {
-        const events = await promisedGlob(`${cwd()}/dist/events/Lavalink/*.js`);
+        const events = await promisedGlob(`${cwd()}/build/events/Lavalink/*.js`);
         if (!events.length) {
             panic("Failed to read events directory in wildcard mode.");
             return;
